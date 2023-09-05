@@ -1,0 +1,32 @@
+#container{
+    background-color: aqua;
+    border:2px solid brown;
+    margin-top: 150px;
+    width: 600px;
+    height: 600px;
+    margin-left: 540px;
+    
+}
+.grid{
+ 
+    width: 100%; /* Each grid item takes the full width of its cell */
+    padding-top: 100%; /* Create a square shape for each grid item based on height */
+    background-color: black; /* Background color of each grid item */
+    border: 1px solid #ccc;
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns */
+     /* Gap between grid items */
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    border: 1px solid blue; 
+}
+.pixelated-cell {
+    
+    background-color: lightgray; /* Default background color of the cell */
+    border: 1px solid #ccc; /* Border around the cell */
+    filter: pixelate(5px); /* Pixelate filter, adjust the pixel size as needed */
+    transition: background-color 0.2s; /* Smooth transition for background color */
+}
